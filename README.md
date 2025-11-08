@@ -41,7 +41,7 @@ python app.py
 ---
 
 ## Test API endpoint
-curl -X POST -F "video=@<video name>.mp4" http://127.0.0.1:5000/analyze
+curl -X POST -F "video=@<video_name>.mp4" http://127.0.0.1:5000/analyze
 
 ---
 
