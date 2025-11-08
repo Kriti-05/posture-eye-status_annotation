@@ -20,8 +20,8 @@ This project provides a **Flask API** for video analysis using **YOLOv11 pose de
 
 1. Clone the repository:
  
-- git clone https://github.com/<your-username>/yolo-mediapipe-video-analysis.git
-- cd yolo-mediapipe-video-analysis
+- git clone https://github.com/Kriti-05/posture-eye-status_annotation.git
+- cd posture-eye-status_annotation
 
 2. Create a virtual environment:
 python -m venv venv
