@@ -46,6 +46,6 @@ curl -X POST -F "video=@<video name>.mp4" http://127.0.0.1:5000/analyze
 ---
 
 ## Notes
-Only .mp4 videos are supported.
-Baseline posture is calculated from the first 3 seconds of the video.
-Annotated frames include posture and eyes status.
+- Only .mp4 videos are supported.
+- Baseline posture is calculated from the first 3 seconds of the video.
+- Annotated frames include posture and eyes status.
