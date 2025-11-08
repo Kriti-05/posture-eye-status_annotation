@@ -19,7 +19,7 @@ This project provides a **Flask API** for video analysis using **YOLOv11 pose de
 ## Setup Instructions
 
 1. Clone the repository:
-```bash
+ 
 git clone https://github.com/<your-username>/yolo-mediapipe-video-analysis.git
 cd yolo-mediapipe-video-analysis
 
@@ -27,7 +27,7 @@ cd yolo-mediapipe-video-analysis
 python -m venv venv
 
 3. Activate the virtual environment:
-# Windows
+For windows
 venv\Scripts\activate
 
 4. Install dependencies:
