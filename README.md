@@ -24,14 +24,14 @@ This project provides a **Flask API** for video analysis using **YOLOv11 pose de
 - cd posture-eye-status_annotation
 
 2. Create a virtual environment:
-python -m venv venv
+- python -m venv venv
 
 3. Activate the virtual environment:
 For windows
-venv\Scripts\activate
+- venv\Scripts\activate
 
 4. Install dependencies:
-pip install -r requirements.txt
+- pip install -r requirements.txt
 
 ---
 
