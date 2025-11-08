@@ -33,12 +33,17 @@ venv\Scripts\activate
 4. Install dependencies:
 pip install -r requirements.txt
 
+---
 
 ## Running the Flask Server
 python app.py
 
+---
+
 ## Test API endpoint
 curl -X POST -F "video=@<video name>.mp4" http://127.0.0.1:5000/analyze
+
+---
 
 ## Notes
 Only .mp4 videos are supported.
