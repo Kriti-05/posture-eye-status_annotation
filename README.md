@@ -42,10 +42,16 @@ dima806/closed_eyes_image_detection.
 
 ## Run the flask server
 
-- Install all dependencies directly : pip install flask ultralytics mediapipe opencv-python torch torchvision torchaudio pillow numpy transformers
+- Install all dependencies directly 
+   ```cmd
+  pip install flask ultralytics mediapipe opencv-python torch torchvision torchaudio pillow numpy transformers
 
-- Run the flask server : python app.py
+- Run the flask server 
+   ```cmd
+  python app.py
 
-- Test the API end point : curl -X POST -F "video=@<video_name>.mp4" http://127.0.0.1:5000/analyze
+- Test the API end point
+   ```cmd
+  curl -X POST -F "video=@<video_name>.mp4" http://127.0.0.1:5000/analyze
 
 
