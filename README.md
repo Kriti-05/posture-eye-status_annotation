@@ -16,7 +16,7 @@ It detects **human posture** and **eye state**, then annotates each frame with:
 |------|-------------|--------|
 | **Pose Estimation** | YOLOv11 Pose (`yolo11n-pose.pt`) | Detects body keypoints (nose, shoulders, hips) |
 | **Posture Detection** | Custom geometric ratio | `ratio = (nose–hip distance) / (shoulder–hip distance)`<br>Compared against baseline (first 3s) → “Straight” or “Hunched” |
-| **Eye State Detection** | MediaPipe FaceMesh | Uses detected eye landmarks to crop eyes and classify them using `dima806/closed_eyes_image_detection` |
+| **Eye State Detection** | MediaPipe FaceMesh HuggingFace | Uses detected eye landmarks to crop eyes and classify them using `dima806/closed_eyes_image_detection` |
 | **Annotation** | OpenCV | Draws skeleton, keypoints, and text (Posture + Eye State) on frames |
 | **API Hosting** | Flask | `/analyze` endpoint accepts a video and returns annotated output |
 
@@ -43,12 +43,12 @@ dima806/closed_eyes_image_detection.
 ## Run the flask server
 
 - Install all dependencies directly
-  pip install flask ultralytics mediapipe opencv-python torch torchvision torchaudio pillow numpy transformers
+- pip install flask ultralytics mediapipe opencv-python torch torchvision torchaudio pillow numpy transformers
 
 - Run the flask server
-  python app.py
+- python app.py
 
 - Test the API end point
-  curl -X POST -F "video=@<video_name>.mp4" http://127.0.0.1:5000/analyze
+- curl -X POST -F "video=@<video_name>.mp4" http://127.0.0.1:5000/analyze
 
 
